@@ -1,0 +1,68 @@
+{
+    "products": {
+        "1": {
+            "id": 1,
+            "name": "Produto genérico",
+            "img": "/img/azulim.jpg",
+            "subTitle": "Desinfetante",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis ipsum quam, libero eum impedit dignissimos eius sed adipisci soluta, quibusdam, facere provident ullam ipsa. Consectetur neque veritatis odio iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis ipsum quam, libero eum impedit dignissimos eius sed adipisci soluta, quibusdam, facere provident ullam ipsa. Consectetur neque veritatis odio iusto.",
+            "qtd": "300ml",
+            "marca": "Azulim" 
+        },
+        "2": {
+            "id": 2,
+            "name": "Produto genérico 2",
+            "img": "/img/azulim.jpg"
+        },
+        "3": {
+            "id": 3,
+            "name": "Produto genérico 3",
+            "img": "/img/azulim.jpg"
+        },
+        "4": {
+            "id": 4,
+            "name": "Produto genérico 4",
+            "img": "/img/azulim.jpg"
+        },
+        "5": {
+            "id": 5,
+            "name": "Produto genérico 5",
+            "img": "/img/azulim.jpg"
+        },
+        "6": {
+            "id": 6,
+            "name": "Produto genérico 6",
+            "img": "/img/azulim.jpg"
+        },
+        "7": {
+            "id": 7,
+            "name": "Produto genérico 7",
+            "img": "/img/azulim.jpg"
+        },
+        "8": {
+            "id": 8,
+            "name": "Produto genérico 8",
+            "img": "/img/azulim.jpg"
+        },
+        "9": {
+            "id": 9,
+            "name": "Produto genérico 9",
+            "img": "/img/azulim.jpg"
+        },
+        "10": {
+            "id": 10,
+            "name": "Produto genérico 10",
+            "img": "/img/azulim.jpg"
+        },
+        "11": {
+            "id": 11,
+            "name": "Produto genérico 11",
+            "img": "/img/azulim.jpg"
+        },
+        "12": {
+            "id": 12,
+            "name": "Produto genérico 12",
+            "img": "/img/azulim.jpg"
+        }
+    }
+}

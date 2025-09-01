@@ -1,0 +1,32 @@
+{
+    "testimonial": {
+        "1": {
+            "id": 1,
+            "name": "Ademar cesar silva",
+            "description": "Nota 1000, preços ótimos, qualidade inigualável, produtos que atendem a necessidade da empresa e do lar, atendimento e compromisso com o cliente. Super indico.",
+            "link": "https://g.co/kgs/kPXrkjL",
+            "img": "https://lh3.googleusercontent.com/a/ACg8ocLJ8ox_uB-oboyOjt_sUTluzsIQ0LyfOn7SV_C3288vtNSeyw=w72-h72-p-rp-mo-br100"
+        },
+        "2": {
+            "id": 2,
+            "name": "Margareth Sagrillo",
+            "description": "Adoro comprar meus produtos na Limpeza. Sempre fui muito bem atendida, super indico ☺️",
+            "link": "https://maps.app.goo.gl/KhS81H9ty65az6dr8",
+            "img": "https://lh3.googleusercontent.com/a-/ALV-UjX_uj4RpCSJmPTG74m00z43TWmHYrbeQm9aRX6-tUQaCpFlYp9o=w72-h72-p-rp-mo-br100"
+        },
+        "3": {
+            "id": 3,
+            "name": "Valéria Reis Ravagnani",
+            "description": "Excelente  experiência como cliente, desde o atendimento  até o suporte quando precisei recorrer  a troca de um produto! Respeito,  educação e competência  são as principais  qualidades da Limpaza! Nota 10!",
+            "link": "https://maps.app.goo.gl/3C3Gn5U2RFNPMNHB8",
+            "img": "https://lh3.googleusercontent.com/a-/ALV-UjWKUys2EE73cW3bzY-3jQ6CjZTV39PDmxeHcg-lnoiWGGSg1fkjEQ=w72-h72-p-rp-mo-br100"
+        },
+        "4": {
+            "id": 4,
+            "name": "Sebastião Leal",
+            "description": "Foi muito boa fui muito bem atendido e os produtos são de ótimas qualidades sem contar que os preços são bem acessíveis indico vc a comprar lá vale a pena...",
+            "link": "https://g.co/kgs/kPXrkjL",
+            "img": "https://lh3.googleusercontent.com/a-/ALV-UjWYV2DgF-6RoV5y2nvLPBeGVWRMi79Lmivb_ZcIIQpSV-Mxx9M=w72-h72-p-rp-mo-br100"
+        }
+    }
+}
