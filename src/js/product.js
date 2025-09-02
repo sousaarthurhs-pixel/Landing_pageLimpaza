@@ -104,9 +104,7 @@ const swiperProduct = new Swiper('.product-container-box', {
     spaceBetween: 20,
     freeMode: true,
     slidesPerView: "auto",
-    grabCursor: true, // Adiciona cursor de arrastar
-    resistance: true, // Resistência ao arrastar
-    resistanceRatio: 0.6, // Quantidade de resistência
+    grabCursor: true, // Adiciona cursor de arrastarW
     navigation: {
         nextEl: ".button-next-p",
         prevEl: ".button-prev-p",
