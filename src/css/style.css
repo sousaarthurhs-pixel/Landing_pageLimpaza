@@ -19,7 +19,6 @@
     --transition: all 0.3s ease;
 }
 
-/*Parte padrão de todos os elementos*/
 *:not(dialog) {
     margin: 0%;
     padding: 0%;
@@ -75,9 +74,9 @@ body {
 
 @media (max-width: 1024px) {
     .header-top {
-      display: none;
+        display: none;
     }
-  }
+}
 
 .header-top .container {
     display: flex;
@@ -1897,7 +1896,6 @@ dialog[open] {
     padding-top: 5%;
 }
 
-/* Ajustes para tablets */
 @media (max-width: 1024px) {
     .moreInfo-title {
         font-size: 36px;
@@ -1917,7 +1915,6 @@ dialog[open] {
     }
 }
 
-/* Ajustes para mobile grande */
 @media (max-width: 768px) {
     .moreInfo-title {
         font-size: 30px;
@@ -1942,7 +1939,6 @@ dialog[open] {
     }
 }
 
-/* Ajustes para mobile pequeno */
 @media (max-width: 480px) {
     .moreInfo-title {
         font-size: 26px;
@@ -1981,12 +1977,9 @@ dialog[open] {
     max-width: 800px;
     padding-top: 30px;
     line-height: 1.6;
-    /* Melhora a legibilidade */
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    /* Adiciona contraste */
 }
 
-/* Melhorar contraste para telas menores */
 @media (max-width: 768px) {
     .moreInfo-text {
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -1999,10 +1992,8 @@ dialog[open] {
     flex-direction: column;
     width: 100%;
     min-height: 500px;
-    /* Altura mínima para a seção */
 }
 
-/* Ajustar altura mínima para dispositivos móveis */
 @media (max-width: 768px) {
     .moreInfo {
         min-height: 400px;
@@ -2054,7 +2045,6 @@ dialog[open] {
 
     .navigation {
         padding-inline: 5%;
-        /* Alterando o padding para 5% conforme solicitado */
     }
 }
 
@@ -2085,7 +2075,6 @@ dialog[open] {
         left: 0;
     }
 
-    /* Adicionar overlay quando o menu estiver aberto */
     .overlay {
         display: none;
         position: fixed;
