@@ -1314,51 +1314,20 @@ footer a:hover {
 
 .product-box {
     display: flex;
-    flex-direction: row;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2% 0;
 }
 
 .product {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 240px !important;
-    /* Tamanho fixo */
-    min-width: 240px !important;
-    /* Tamanho fixo */
-    height: 100%;
     transition: transform 0.3s ease;
-    background-color: #fff;
-    color: #184f89;
-    border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    margin: 0 10px;
-    /* Espaçamento entre os produtos */
+    border-radius: 16px;
 }
 
-/* Garantir que o tamanho não mude em nenhuma tela */
-@media (max-width: 1024px) {
-    .product {
-        max-width: 240px !important;
-        min-width: 240px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .product {
-        max-width: 240px !important;
-        min-width: 240px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .product {
-        max-width: 240px !important;
-        min-width: 240px !important;
-        margin: 0 5px;
-        /* Reduzir espaçamento em telas muito pequenas */
-    }
+.product img {
+    border-radius: 16px;
 }
 
 .product:hover {
@@ -1468,14 +1437,24 @@ dialog::backdrop {
 
 dialog {
     width: 70%;
+    height: 80%;
     border: none;
     border-radius: 16px;
     padding: 2% 3%;
+    overflow: hidden;
 }
 
 dialog[open] {
     display: flex;
     flex-direction: column;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: thin;
+    padding: 0 2%;
 }
 
 .modal-header {
@@ -1579,6 +1558,10 @@ dialog[open] {
     .modal-img, .modal-container-text{
         width: 100%;
     }
+}
+
+.info-title {
+    color: var(--color-text);
 }
 
 .container-line {

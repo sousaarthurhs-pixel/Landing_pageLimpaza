@@ -13,41 +13,44 @@ const teste = fetch("/json/product.json").then((response) => {
         for (let i = 1; i <= total; i++) {
             cardProduct.innerHTML +=
                 `
-        <div class="product swiper-slide">
+        <div class="product">
             <a class="btn-open" onclick="openModal(${dados.products[i].id})" type="button">
                 <img src="${dados.products[i].img}" alt="">
             </a>
-        
-            <div class="product-info">
-                <span class="product-subtitle">${dados.products[i].subTitle}</span>
-                <a onclick="openModal(${dados.products[i].id})" type="button">
-                    <span class="product-title">${dados.products[i].name}</span>
-                </a>
-                <div class="product-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-        
-            <div class="product-btns">
-                <a type="button" class="product-btn" href="https://wa.me/551998733015?text=Olá,%20quero%20falar%20com%20vocês!">Solicitar Orçamento</a>
-                <input type="button" class="product-btn-solicited" onclick="openModal(${dados.products[i].id})" value="Ver Mais">
-            </div>
         </div>
         `
         }
     })
 });
-
+            // <a class="btn-open" onclick="openModal(${dados.products[i].id})" type="button">
+            //     <img src="${dados.products[i].img}" alt="">
+            // </a>
+        
+            // <div class="product-info">
+            //     <span class="product-subtitle">${dados.products[i].subTitle}</span>
+            //     <a onclick="openModal(${dados.products[i].id})" type="button">
+            //         <span class="product-title">${dados.products[i].name}</span>
+            //     </a>
+            //     <div class="product-rate">
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-solid fa-star"></i>
+            //     </div>
+            // </div>
+        
+            // <div class="product-btns">
+            //     <a type="button" class="product-btn" href="https://wa.me/551998733015?text=Olá,%20quero%20falar%20com%20vocês!">Solicitar Orçamento</a>
+            //     <input type="button" class="product-btn-solicited" onclick="openModal(${dados.products[i].id})" value="Ver Mais">
+            // </div>
 
 const openModal = (id) => {
 
     body.classList.toggle("scrol");
     let nameProduct = productAll[id].name;
     let imgProduct = productAll[id].img;
+    let imgModal = productAll[id].imgModal;
     let descProduct = productAll[id].description;
     let subTitleProduct = productAll[id].subTitle;
     let qtdProduct = productAll[id].qtd;
@@ -55,6 +58,7 @@ const openModal = (id) => {
 
     main.innerHTML =
         `
+        <div class="modal">
     <button class="btn-close" onclick="(closeModal())">
         <i class="fa-solid fa-xmark"></i>
     </button>
@@ -64,26 +68,13 @@ const openModal = (id) => {
 
     <section class="modal-section">
         <div class="modal-img">
-            <img src="${imgProduct}">
+            <img src="${imgModal}">
         </div>
         
         <div class="modal-container-text">
             <div class="modal-text">
                 <span class="modal-title">Descrição</span>
                 <span class="modal-desc">${descProduct}</span>
-                <div class="product-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="modal-box-info">
-                    <span class="modal-info"><b>Marca:</b> ${marcaProduct}</span>
-                    <span class="modal-info"><b>Quantidade:</b> ${qtdProduct}</span>
-                    <span class="modal-info"><b>Uso:</b> ${subTitleProduct}</span>
-                </div>
-
             </div>
 
             <div class="modal-btn">
@@ -91,6 +82,7 @@ const openModal = (id) => {
             </div>
         </div>
     </section>
+    </div>
     `
     main.showModal();
 }
@@ -100,28 +92,7 @@ const closeModal = () => {
     main.close();
 }
 
-const swiperProduct = new Swiper('.product-container-box', {
-    spaceBetween: 20,
-    freeMode: true,
-    slidesPerView: "auto",
-    grabCursor: true, // Adiciona cursor de arrastarW
-    navigation: {
-        nextEl: ".button-next-p",
-        prevEl: ".button-prev-p",
-    },
-    breakpoints: {
-        // Configurações específicas para diferentes breakpoints
-        320: {
-            spaceBetween: 10,
-        },
-        768: {
-            spaceBetween: 15,
-        },
-        1024: {
-            spaceBetween: 20,
-        }
-    }
-});
+
 
 
 // Adicione este código em um novo arquivo ou no final do body
